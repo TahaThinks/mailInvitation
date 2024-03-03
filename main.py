@@ -1,4 +1,7 @@
+contents = []
+
 with open("invited_names.txt") as file:
-    contents = file.read()
+    for line in file:
+        contents.append(line.rstrip())
 
 print(contents)
